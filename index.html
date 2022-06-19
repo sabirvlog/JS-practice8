@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+	 href="style.css">
+	<title>Conditional statements with logics- JavaScript Tutorial #08</title>
+</head>
+<body>
+	
+	<b style="font-size: 24px;">Result: &nbsp; </b> <wbr> <i id="res"> </i>
+	
+
+
+			<h1>Tutorial about ForEach loop, Switch statements and continue statements and also for loops</h1>
+</body>
+		<script>
+//     ************************Continue statements*************************	
+
+		/*
+			for (var age = 0; age <= 10; age++) 
+			{
+				if (age == 5){
+				continue;
+				// continue statements are used to skip the current iterations or executions and move on next operation or iteration.
+			  }
+			  document.write(age+ "<br>");
+			} 
+		*/
+
+
+
+
+//     ************************Switch Statements*************************	//	
+	/*
+			var age = 25;
+			// var age = prompt("Enter Your age here?","");
+			switch(age)
+			{
+			case 5:
+				document.write(" A cute baby. You are "+ age + "years old.");
+				break;
+
+			case 10:
+				document.write("A young man with a "+ age + " years old.");
+						break;
+
+			case 15:
+					document.write("A teen ager human and a "+ age + " years old.");
+						break;
+			case 20:
+					document.write("You are "+ age + " years old.");
+						break;
+			case 30:
+				   document.write("An Age of hard working "+ age + " years old.");
+					break;
+			case 40:
+					document.write("A person with "+ age + " years old.");
+						break
+			case 50:
+					document.write("Going to max age "+ age + " years old.");
+						break;
+			case 100:
+					document.write(age +" =>" +" years you are looking too old man.");
+						break;
+			case 25:
+				document.write(age +" =>" + "\n"+" The age of competing with others.");	
+				break;		
+			}			
+ */
+			   				
+// ************************Switch Statements************************************
+
+	/*		// var ageNew = prompt("Enter Your age here?",""); 
+			//   document.write(age+ "<br>");  
+			// var age = ageNew + " years";
+			//  document.getElementById('res').innerHTML = age;
+		*/	
+
+//  *********************Switch Statement are there***************************
+
+    
+		 var age = [5, 15, 20, 40, 10, 30,100,50,25 ];
+		 	
+			   age[0]= 5;
+			   age[1]= 15;
+			   age[2]= 20;
+			   age[3]= 40;
+			   age[4]= 10;
+			   age[5]= 30;
+			   age[6]= 100;
+			   age[7]= 50;
+			   age[8]= 25; 	
+
+			   	for (var i = 0; i < age.length; i++) {
+			   		superAge = age[i];	
+			
+			switch(superAge)
+			{
+			case 5:
+				document.write(" A cute baby. You are "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+				console.log("successfully works your program!");
+				break;
+			case 10:
+			document.write("A young man with a "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+			console.log("successfully works your program!");
+						break;
+			case 15:
+					document.write("A teen ager human and a "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+					console.log("successfully works your program!");
+						break;
+			case 20:
+					document.write("You are "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+					console.log("successfully works your program!");
+						break;
+			case 30:
+				document.write("An Age of hard working "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+				console.log("successfully works your program!");
+					break;
+			case 40:
+					document.write("A person with "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+					console.log("successfully works your program!");
+						break
+			case 50:
+					document.write("Going to max age "+ "<b>"+superAge+"</b>" + " years old."+ "<br> <hr>");
+					console.log("successfully works your program!");
+						break;
+			case 100:
+					document.write("<b>"+superAge+"</b>" +" years you are looking too old man."+ "<br> <hr>");
+					console.log("successfully works your program!");
+						break;
+			case 25:
+				document.write("<b>"+superAge+"</b>" + " The age of fulfill your Dreams"+ "<br> <hr>");	
+				console.log("successfully works your program!");
+				break;
+
+			default:
+				document.write(superAge + " Error with your program!");	
+				console.log("Error with your program!");		
+			}			
+}
+
+//  ***************************************************************************
+
+		/*	
+			var age = prompt("Enter Your age here?","");
+			if (age>=5 && age<100 ) {
+				document.write("You are "+ age+ " years old.");
+ 			}
+ 			else if (age == 100) {
+ 			 	document.write(age+" years you are looking too old man.")
+ 			}
+			else if (age >= 10 && age <20 ) {
+				document.write("A teen ager human and "+ age+ " years old.");
+			}
+			else if (age>=16 && age<=26 ) {
+				document.write("A hard working age which is "+ age+ " years old.");
+			}
+			else if (age >= 1 && age <=4 ) {
+				document.write(" A cute baby. You are "+ age+ "years old.");
+			}
+			else
+			{
+				document.write("Sorry that is Undefined age");
+			}
+		*/	
+		</script>
+
+</html>		
